@@ -32,14 +32,14 @@ public class PhoneDao {
 	private String pw = "Zooland9412!";
 	
 	public void getConnection() {
-		System.out.println("bbb");
+		//System.out.println("bbb");
 		try {
 			// 1. 오라클 드라이버 로딩
 			Class.forName(driver);
-			System.out.println("ccc");
+			//System.out.println("ccc");
 			// 2. 데이터베이스 접속
 			conn = DriverManager.getConnection(url, id, pw);
-			System.out.println("ddd");
+			//System.out.println("ddd");
 
 		} catch (ClassNotFoundException e) {
 			System.out.println("error: 드라이버 로딩 실패 - " + e);
@@ -106,7 +106,7 @@ public class PhoneDao {
 
 	// 사람 검색(select) 메소드
 	public List<PersonVo> personSelect() {
-		System.out.println("aaaa");
+		//System.out.println("aaaa");
 		// 리스트로 만들기
 		List<PersonVo> personList = new ArrayList<PersonVo>();
 		this.getConnection();
