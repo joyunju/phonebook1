@@ -10,7 +10,7 @@
 
 <%
 	PhoneDao phoneDao = new PhoneDao();
-	List<PersonVo> personList = phoneDao.personSelect();
+	List<PersonVo> personList = phoneDao.getPersonList();
 	
 	//System.out.println(personList);
 %>
